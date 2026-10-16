@@ -1,0 +1,35 @@
+*{
+    display: flex;
+    justify-content: center;
+    width: 990px;
+    height: 100%;
+    margin-top: 0px;
+}
+.container {
+    width: 100%;
+    height: 70px;
+    background-color: gray;
+}
+
+/* LOGO E NOME */
+
+
+.logo{
+  
+    background-color: green;
+    
+}
+
+.menubranco{
+    background-color: blue;
+}
+/* MENU */
+.menu{
+    
+    background-color: red;
+    
+}
+.redes0{
+    display: flex;
+    background-color: aqua;
+}
