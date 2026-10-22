@@ -230,6 +230,32 @@ p{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================
+   RESPONSIVIDADE PARA TABLETS
+   Telas de até 768px
+========================================== */
+
 @media screen and (max-width: 768px) {
 
     body {
@@ -244,17 +270,130 @@ p{
     }
 
     /* CABEÇALHO */
-  
+    .header {
+        width: 100%;
+        height: auto;
+        min-height: 80px;
+        align-items: center;
+    }
+
+    .logo {
+        margin-left: 3%;
+        flex-shrink: 0;
+    }
+
+    .logo img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .menu {
+        gap: 8px;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    .btn {
+        padding: 10px 12px;
+        font-size: 10px;
+    }
 
     /* CONTEÚDO PRINCIPAL */
-   
-        
-    
+    .section {
+        width: 100%;
+        height: auto;
+        padding: 25px 3%;
+        box-sizing: border-box;
+
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .video {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .video iframe {
+        width: 100%;
+        max-width: 560px;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .segundo {
+        width: 100%;
+    }
+
+    .titulo {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px 0;
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .texto {
+        width: 100%;
+        box-sizing: border-box;
+        line-height: 1.6;
+        padding: 5px 0;
+    }
+
+    .compra {
+        justify-content: center;
+        padding-top: 15px;
+    }
+
     /* CONTEÚDO SECUNDÁRIO */
-  
+    .article {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 0 3%;
+    }
+
+    .article h1,
+    .article p {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        text-align: center;
+    }
 
     /* RODAPÉ */
-  
+    .footer {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+        padding: 20px 3%;
+        box-sizing: border-box;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .footer > div {
+        flex: 1 1 150px;
+        min-width: 0;
+        text-align: center;
+    }
+
+    .footer img {
+        max-width: 65px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .fonterodape {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .textimg {
+        text-align: center;
+    }
+}
+
 
 /* ==========================================
    RESPONSIVIDADE PARA CELULARES
@@ -264,12 +403,114 @@ p{
 @media screen and (max-width: 480px) {
 
     /* CABEÇALHO */
+    .header {
+        flex-direction: column;
+        padding: 10px 0;
+        gap: 10px;
+    }
+
+    .logo {
+        width: 60px;
+        height: 60px;
+        margin: 0;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .menu {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 5px 10px;
+        gap: 8px;
+        justify-content: center;
+    }
+
+    .btn {
+        padding: 10px 12px;
+        font-size: 10px;
+    }
 
     /* CONTEÚDO PRINCIPAL */
-  
+    .section {
+        padding: 20px 15px;
+        gap: 15px;
+    }
+
+    .video iframe {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+
+    .titulo {
+        font-size: 25px;
+        padding: 10px 0;
+        line-height: 1.3;
+    }
+
+    .texto {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+
+    .compra {
+        justify-content: center;
+    }
+
+    .btn-comprar {
+        width: 100%;
+        max-width: 250px;
+        box-sizing: border-box;
+        font-size: 14px;
+    }
+
+    /* CONTEÚDO SECUNDÁRIO */
+    .article {
+        padding: 0 15px;
+    }
+
+    .article h1 {
+        font-size: 23px;
+        padding-top: 25px;
+        line-height: 1.3;
+    }
+
+    .article p {
+        font-size: 12px;
+        line-height: 1.6;
+        padding: 10px 0;
+    }
 
     /* RODAPÉ: UMA COLUNA */
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        padding: 25px 15px;
+    }
 
+    .footer > div {
+        width: 100%;
+        flex: none;
+    }
+
+    .footer img {
+        width: 65px;
+        height: 65px;
+    }
+
+    .fonterodape {
+        font-size: 21px;
+    }
+
+    .textimg {
+        font-size: 12px;
+        line-height: 1.6;
+    }
+}
 
 
 /* ==========================================
@@ -277,6 +518,30 @@ p{
    Telas de até 360px
 ========================================== */
 
+@media screen and (max-width: 360px) {
+
+    .menu {
+        gap: 5px;
+        padding: 5px;
+    }
+
+    .btn {
+        padding: 9px 8px;
+        font-size: 9px;
+    }
+
+    .titulo {
+        font-size: 22px;
+    }
+
+    .article h1 {
+        font-size: 20px;
+    }
+
+    .fonterodape {
+        font-size: 19px;
+    }
+}
 
 
 
@@ -309,4 +574,41 @@ p{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
 
